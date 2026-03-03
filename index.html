@@ -3,186 +3,492 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DEEP BREW, Sundaze — SA's Favourite Sunday Tradition</title>
-  <meta name="description" content="Deep Brew Sundaze — SA's favourite rooftop Sunday tradition. Friends, food, music and drinks in Gqeberha since 2014." />
+
+  <!-- ═══ PRIMARY SEO ═══ -->
+  <title>Deep Brew Sundaze | Rooftop Sunday Party Gqeberha | South Africa</title>
+  <meta name="description" content="Deep Brew Sundaze is South Africa's favourite rooftop Sunday party experience in Gqeberha. Live music, curated drinks, incredible sunsets. Book tickets now on Quicket." />
+  <meta name="keywords" content="rooftop party South Africa, rooftop sundowner Gqeberha, Sunday party Port Elizabeth, Deep Brew Sundaze, rooftop events Eastern Cape, Sunday rooftop bar Gqeberha, Roof Garden Bar events, outdoor party South Africa, boutique festival Eastern Cape, sundowner party PE" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Deep Brew Sundaze" />
+  <link rel="canonical" href="https://deepbrewsundaze.com/" />
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://deepbrewsundaze.com/" />
+  <meta property="og:title" content="Deep Brew Sundaze | SA's Favourite Rooftop Sunday Party" />
+  <meta property="og:description" content="South Africa's favourite rooftop Sunday tradition since 2014. Friends, food, music and drinks on the iconic Roof Garden Bar rooftop in Gqeberha." />
+  <meta property="og:image" content="https://deepbrewsundaze.com/og-image.jpg" />
+  <meta property="og:site_name" content="Deep Brew Sundaze" />
+  <meta property="og:locale" content="en_ZA" />
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Deep Brew Sundaze | SA's Favourite Rooftop Sunday Party" />
+  <meta name="twitter:description" content="South Africa's favourite rooftop Sunday tradition since 2014. Book your tickets now." />
+  <meta name="twitter:image" content="https://deepbrewsundaze.com/og-image.jpg" />
+
+  <!-- ═══ GEO / LOCAL SEO ═══ -->
+  <meta name="geo.region" content="ZA-EC" />
+  <meta name="geo.placename" content="Gqeberha, Eastern Cape, South Africa" />
+  <meta name="geo.position" content="-33.9608;25.6022" />
+  <meta name="ICBM" content="-33.9608, 25.6022" />
+
+  <!-- ═══ STRUCTURED DATA (JSON-LD) ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://deepbrewsundaze.com/#organization",
+        "name": "Deep Brew Sundaze",
+        "url": "https://deepbrewsundaze.com",
+        "logo": "https://deepbrewsundaze.com/logo.png",
+        "description": "South Africa's favourite rooftop Sunday party and event brand, based in Gqeberha, Eastern Cape.",
+        "foundingDate": "2014",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "33 Winston Ntshona St",
+          "addressLocality": "Gqeberha",
+          "addressRegion": "Eastern Cape",
+          "postalCode": "6001",
+          "addressCountry": "ZA"
+        },
+        "telephone": "+27815595518",
+        "sameAs": [
+          "https://www.facebook.com/DEEPBREW",
+          "https://www.instagram.com/deepbrewsundaze/"
+        ]
+      },
+      {
+        "@type": "EventSeries",
+        "name": "Deep Brew Sundaze",
+        "description": "A recurring rooftop Sunday party series in Gqeberha, South Africa, featuring curated music, food and drinks.",
+        "location": {
+          "@type": "Place",
+          "name": "Roof Garden Bar",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "33 Winston Ntshona St",
+            "addressLocality": "Gqeberha",
+            "addressRegion": "Eastern Cape",
+            "postalCode": "6001",
+            "addressCountry": "ZA"
+          }
+        },
+        "organizer": {
+          "@id": "https://deepbrewsundaze.com/#organization"
+        },
+        "url": "https://deepbrewsundaze.com",
+        "image": "https://deepbrewsundaze.com/og-image.jpg"
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://deepbrewsundaze.com",
+        "name": "Deep Brew Sundaze",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://deepbrewsundaze.com/?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     :root {
       --red: #C0392B;
-      --warm: #F7F2EA;
-      --warm-mid: #EDE6D8;
-      --warm-dark: #D9CEBA;
-      --ink: #1A1410;
-      --ink-mid: #3D3228;
-      --ink-light: #7A6E62;
+      --red-soft: rgba(192,57,43,0.1);
+      --sun: #E8B86D;
+      --sun-soft: rgba(232,184,109,0.15);
+      --warm: #F5EFE4;
+      --warm-deep: #EDE3D3;
+      --ink: #1C1410;
+      --ink-mid: #4A3F36;
+      --ink-light: #8A7D72;
       --white: #FDFAF5;
+      --radius-lg: 28px;
+      --radius-xl: 40px;
+      --radius-pill: 999px;
     }
+
     html { scroll-behavior: smooth; }
-    body { background: var(--white); color: var(--ink); font-family: 'Jost', sans-serif; font-weight: 300; overflow-x: hidden; }
+    body {
+      background: var(--warm);
+      color: var(--ink);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      overflow-x: hidden;
+    }
 
-    /* NAV */
-    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 22px 56px; background: rgba(253,250,245,0.93); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(26,20,16,0.07); transition: padding 0.3s; }
-    .nav-logo img { height: 44px; width: auto; filter: invert(1) sepia(0.5) saturate(3) hue-rotate(315deg) brightness(0.28); transition: opacity 0.3s; }
-    .nav-logo:hover img { opacity: 0.7; }
-    .nav-links { display: flex; gap: 38px; list-style: none; }
-    .nav-links a { font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-light); text-decoration: none; transition: color 0.25s; }
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+      z-index: 200;
+      display: flex; align-items: center; justify-content: space-between;
+      width: calc(100% - 48px); max-width: 1200px;
+      padding: 14px 20px 14px 24px;
+      background: rgba(253,250,245,0.88);
+      backdrop-filter: blur(20px);
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(26,20,16,0.07);
+      box-shadow: 0 4px 32px rgba(26,20,16,0.06);
+      transition: all 0.3s ease;
+    }
+    .nav-logo img {
+      height: 38px; width: auto;
+      filter: invert(1) sepia(0.5) saturate(3) hue-rotate(315deg) brightness(0.28);
+    }
+    .nav-links { display: flex; gap: 32px; list-style: none; }
+    .nav-links a {
+      font-size: 12px; font-weight: 500; letter-spacing: 0.1em;
+      text-transform: uppercase; color: var(--ink-light); text-decoration: none;
+      transition: color 0.2s;
+    }
     .nav-links a:hover { color: var(--ink); }
-    .nav-cta { font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; background: var(--red); color: #fff; padding: 11px 26px; text-decoration: none; transition: background 0.25s; display: inline-block; }
-    .nav-cta:hover { background: var(--ink); }
+    .nav-cta {
+      font-size: 12px; font-weight: 500; letter-spacing: 0.12em;
+      text-transform: uppercase; background: var(--red); color: #fff;
+      padding: 10px 22px; border-radius: var(--radius-pill);
+      text-decoration: none; transition: background 0.2s, transform 0.2s;
+    }
+    .nav-cta:hover { background: var(--ink); transform: scale(1.02); }
 
-    /* HERO */
-    .hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; align-items: end; padding: 0 56px 80px; position: relative; background: var(--warm); overflow: hidden; }
-    .hero::before { content: ''; position: absolute; top: -10%; right: -5%; width: 70vw; height: 70vw; background: radial-gradient(circle, rgba(224,176,100,0.2) 0%, transparent 65%); pointer-events: none; }
-    .hero-left { position: relative; z-index: 1; }
-    .hero-eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--red); margin-bottom: 28px; opacity: 0; animation: riseIn 0.9s 0.2s cubic-bezier(0.22,1,0.36,1) forwards; }
-    .hero-eyebrow::before { content: ''; display: inline-block; width: 32px; height: 1px; background: var(--red); }
-    .hero-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(64px, 9vw, 140px); line-height: 0.9; color: var(--ink); margin-bottom: 30px; opacity: 0; animation: riseIn 1s 0.4s cubic-bezier(0.22,1,0.36,1) forwards; }
-    .hero-title em { font-style: italic; color: var(--red); }
-    .hero-desc { font-size: clamp(15px, 1.4vw, 18px); line-height: 1.8; color: var(--ink-light); max-width: 380px; margin-bottom: 44px; opacity: 0; animation: riseIn 1s 0.6s cubic-bezier(0.22,1,0.36,1) forwards; }
-    .hero-actions { display: flex; align-items: center; gap: 28px; opacity: 0; animation: riseIn 1s 0.8s cubic-bezier(0.22,1,0.36,1) forwards; }
-    .btn-primary { font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; background: var(--red); color: #fff; padding: 15px 34px; text-decoration: none; display: inline-block; transition: background 0.25s; }
-    .btn-primary:hover { background: var(--ink); }
-    .btn-text { font-size: 12px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink-light); text-decoration: none; display: flex; align-items: center; gap: 8px; transition: color 0.25s; }
-    .btn-text::after { content: '→'; transition: transform 0.25s; }
-    .btn-text:hover { color: var(--ink); }
-    .btn-text:hover::after { transform: translateX(5px); }
-    .hero-right { display: flex; justify-content: flex-end; align-items: flex-end; position: relative; z-index: 1; opacity: 0; animation: riseIn 1.1s 0.5s cubic-bezier(0.22,1,0.36,1) forwards; }
-    .hero-year { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 900; font-size: clamp(120px, 20vw, 300px); color: transparent; -webkit-text-stroke: 1.5px rgba(26,20,16,0.07); line-height: 1; user-select: none; position: relative; }
-    .hero-badge { position: absolute; bottom: 10px; right: 10px; background: var(--red); color: #fff; width: 112px; height: 112px; border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; }
-    .hero-badge span:first-child { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 900; line-height: 1; }
-    .hero-badge span:last-child { font-size: 9px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px; }
+    /* ── HERO ── */
+    .hero {
+      min-height: 100vh;
+      padding: 120px 24px 80px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center;
+      position: relative; overflow: hidden;
+      background: var(--warm);
+    }
+    .hero-glow {
+      position: absolute; top: 10%; left: 50%; transform: translateX(-50%);
+      width: 70vw; height: 60vw; max-width: 800px;
+      background: radial-gradient(ellipse, rgba(232,184,109,0.28) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--sun-soft); border: 1px solid rgba(232,184,109,0.4);
+      color: var(--ink-mid); font-size: 11px; font-weight: 500;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      padding: 8px 18px; border-radius: var(--radius-pill);
+      margin-bottom: 28px;
+      opacity: 0; animation: popIn 0.7s 0.2s cubic-bezier(0.34,1.56,0.64,1) forwards;
+    }
+    .hero-tag::before { content: '✦'; color: var(--sun); }
+    .hero-title {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 900; font-style: italic;
+      font-size: clamp(68px, 12vw, 160px);
+      line-height: 0.88; color: var(--ink);
+      margin-bottom: 24px;
+      opacity: 0; animation: popIn 0.9s 0.35s cubic-bezier(0.34,1.56,0.64,1) forwards;
+    }
+    .hero-title span { color: var(--red); }
+    .hero-sub {
+      font-size: clamp(16px, 1.8vw, 20px); line-height: 1.7;
+      color: var(--ink-light); max-width: 520px; margin: 0 auto 44px;
+      opacity: 0; animation: fadeUp 0.8s 0.55s ease forwards;
+    }
+    .hero-actions {
+      display: flex; align-items: center; justify-content: center; gap: 14px;
+      opacity: 0; animation: fadeUp 0.8s 0.7s ease forwards;
+    }
+    .btn-red {
+      font-size: 13px; font-weight: 500; letter-spacing: 0.12em;
+      text-transform: uppercase; background: var(--red); color: #fff;
+      padding: 16px 36px; border-radius: var(--radius-pill);
+      text-decoration: none; transition: all 0.25s;
+      box-shadow: 0 8px 24px rgba(192,57,43,0.3);
+    }
+    .btn-red:hover { background: var(--ink); transform: translateY(-2px); box-shadow: 0 12px 32px rgba(192,57,43,0.2); }
+    .btn-outline {
+      font-size: 13px; font-weight: 500; letter-spacing: 0.12em;
+      text-transform: uppercase; background: transparent;
+      border: 1.5px solid rgba(26,20,16,0.15); color: var(--ink-mid);
+      padding: 16px 32px; border-radius: var(--radius-pill);
+      text-decoration: none; transition: all 0.25s;
+    }
+    .btn-outline:hover { border-color: var(--ink); color: var(--ink); background: rgba(26,20,16,0.04); }
 
-    /* MARQUEE */
-    .marquee-wrap { overflow: hidden; background: var(--ink); padding: 18px 0; border-top: 3px solid var(--red); }
-    .marquee-track { display: flex; animation: ticker 22s linear infinite; white-space: nowrap; }
-    .marquee-item { font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(253,250,245,0.4); padding: 0 36px; flex-shrink: 0; }
-    .marquee-item.dot { color: var(--red); }
+    /* hero stats row */
+    .hero-stats {
+      display: flex; gap: 12px; margin-top: 64px; flex-wrap: wrap; justify-content: center;
+      opacity: 0; animation: fadeUp 0.8s 0.85s ease forwards;
+    }
+    .hero-stat {
+      background: var(--white); border-radius: var(--radius-lg);
+      padding: 20px 32px; border: 1px solid rgba(26,20,16,0.06);
+      text-align: center; box-shadow: 0 2px 16px rgba(26,20,16,0.04);
+    }
+    .hero-stat-n {
+      font-family: 'Fraunces', serif; font-weight: 900;
+      font-size: 36px; color: var(--ink); line-height: 1;
+    }
+    .hero-stat-l {
+      font-size: 10px; font-weight: 500; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--ink-light); margin-top: 4px;
+    }
 
-    /* SECTION LABEL */
-    .section-label { display: inline-flex; align-items: center; gap: 12px; font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--red); margin-bottom: 18px; }
-    .section-label::before { content: ''; display: inline-block; width: 28px; height: 1px; background: var(--red); }
+    /* ── MARQUEE ── */
+    .marquee-wrap {
+      overflow: hidden; padding: 0;
+      margin: 32px 24px;
+      background: var(--ink); border-radius: var(--radius-xl);
+    }
+    .marquee-inner { padding: 20px 0; overflow: hidden; }
+    .marquee-track {
+      display: flex; animation: ticker 24s linear infinite; white-space: nowrap;
+    }
+    .m-item { font-size: 11px; font-weight: 500; letter-spacing: 0.25em; text-transform: uppercase; color: rgba(253,250,245,0.4); padding: 0 32px; flex-shrink: 0; }
+    .m-dot { color: var(--red) !important; }
 
-    /* ABOUT */
-    .about { display: grid; grid-template-columns: 1fr 1fr; background: var(--white); }
-    .about-left { padding: 100px 56px; border-right: 1px solid var(--warm-dark); }
-    .about-heading { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(40px, 4.5vw, 68px); line-height: 1.05; color: var(--ink); margin-bottom: 28px; }
-    .about-heading em { font-style: italic; color: var(--red); }
+    /* ── SECTION SHARED ── */
+    .section { padding: 80px 24px; }
+    .section-inner { max-width: 1200px; margin: 0 auto; }
+    .chip {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 10px; font-weight: 500; letter-spacing: 0.25em;
+      text-transform: uppercase; color: var(--red);
+      background: var(--red-soft); padding: 7px 16px;
+      border-radius: var(--radius-pill); margin-bottom: 20px;
+    }
+
+    /* ── ABOUT ── */
+    .about-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    }
+    .about-card-main {
+      background: var(--white); border-radius: var(--radius-xl);
+      padding: 56px 48px;
+      border: 1px solid rgba(26,20,16,0.06);
+      box-shadow: 0 4px 32px rgba(26,20,16,0.04);
+    }
+    .about-heading {
+      font-family: 'Fraunces', serif; font-weight: 900; font-style: italic;
+      font-size: clamp(38px, 4vw, 58px); line-height: 1.05;
+      color: var(--ink); margin-bottom: 24px;
+    }
+    .about-heading span { color: var(--red); }
     .about-body { font-size: 16px; line-height: 1.85; color: var(--ink-light); }
-    .about-body p + p { margin-top: 16px; }
-    .about-right { background: var(--warm); padding: 100px 56px; display: flex; flex-direction: column; justify-content: center; }
-    .about-stat { padding: 32px 0; border-bottom: 1px solid var(--warm-dark); }
-    .about-stat:first-child { border-top: 1px solid var(--warm-dark); }
-    .about-stat-number { font-family: 'Playfair Display', serif; font-weight: 900; font-size: 56px; color: var(--ink); line-height: 1; }
-    .about-stat-label { font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-light); margin-top: 6px; }
+    .about-body p + p { margin-top: 14px; }
+    .about-stats-col { display: flex; flex-direction: column; gap: 16px; }
+    .stat-card {
+      background: var(--white); border-radius: var(--radius-xl);
+      padding: 32px 36px; flex: 1;
+      border: 1px solid rgba(26,20,16,0.06);
+      box-shadow: 0 4px 32px rgba(26,20,16,0.04);
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .stat-card.accent { background: var(--ink); }
+    .stat-card.accent .stat-n { color: var(--warm); }
+    .stat-card.accent .stat-l { color: rgba(237,230,216,0.5); }
+    .stat-n {
+      font-family: 'Fraunces', serif; font-weight: 900;
+      font-size: 54px; line-height: 1; color: var(--ink);
+    }
+    .stat-l { font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-light); margin-top: 6px; }
 
-    /* EVENTS */
-    .events { background: var(--warm); padding: 100px 56px; border-top: 1px solid var(--warm-dark); }
-    .events-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 56px; }
-    .events-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(40px, 5vw, 68px); line-height: 1.05; color: var(--ink); }
-    .events-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--warm-dark); border: 1px solid var(--warm-dark); }
-    .event-card { background: var(--white); padding: 36px 32px 40px; position: relative; transition: background 0.25s; overflow: hidden; }
-    .event-card:hover { background: var(--warm); }
-    .event-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px; background: var(--red); transform: scaleX(0); transform-origin: left; transition: transform 0.35s ease; }
-    .event-card:hover::after { transform: scaleX(1); }
-    .event-date { font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--red); margin-bottom: 14px; }
-    .event-name { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 26px; color: var(--ink); margin-bottom: 6px; line-height: 1.2; }
-    .event-venue { font-family: 'Playfair Display', serif; font-style: italic; font-size: 15px; color: var(--ink-light); margin-bottom: 28px; }
-    .event-link { font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--ink); padding-bottom: 2px; transition: color 0.25s, border-color 0.25s; }
-    .event-link:hover { color: var(--red); border-color: var(--red); }
+    /* ── EVENTS ── */
+    .events-bg { background: var(--white); border-radius: var(--radius-xl); padding: 56px 48px; }
+    .events-top { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 40px; }
+    .section-title { font-family: 'Fraunces', serif; font-weight: 900; font-style: italic; font-size: clamp(38px, 4vw, 58px); line-height: 1.05; color: var(--ink); }
+    .events-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 14px; }
+    .event-card {
+      background: var(--warm); border-radius: var(--radius-lg);
+      padding: 32px 28px; position: relative; overflow: hidden;
+      border: 1px solid rgba(26,20,16,0.06);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .event-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(26,20,16,0.1); }
+    .event-date {
+      display: inline-block; background: var(--red-soft);
+      color: var(--red); font-size: 10px; font-weight: 500;
+      letter-spacing: 0.2em; text-transform: uppercase;
+      padding: 5px 14px; border-radius: var(--radius-pill); margin-bottom: 16px;
+    }
+    .event-name { font-family: 'Fraunces', serif; font-weight: 700; font-style: italic; font-size: 26px; color: var(--ink); margin-bottom: 6px; line-height: 1.2; }
+    .event-venue { font-size: 14px; color: var(--ink-light); margin-bottom: 24px; }
+    .event-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 500; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--ink); text-decoration: none;
+      background: var(--white); padding: 9px 18px;
+      border-radius: var(--radius-pill); transition: all 0.2s;
+      border: 1px solid rgba(26,20,16,0.1);
+    }
+    .event-link:hover { background: var(--red); color: #fff; border-color: var(--red); }
 
-    /* BOUTIQUE */
-    .boutique { display: grid; grid-template-columns: 1fr 1fr; background: var(--ink); min-height: 560px; }
-    .boutique-left { padding: 100px 56px; display: flex; flex-direction: column; justify-content: center; }
-    .boutique-eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--red); margin-bottom: 24px; }
-    .boutique-eyebrow::before { content: ''; display: inline-block; width: 28px; height: 1px; background: var(--red); }
-    .boutique-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(40px, 5vw, 70px); line-height: 1.02; color: var(--warm); margin-bottom: 22px; }
-    .boutique-title em { font-style: italic; color: var(--red); }
-    .boutique-desc { font-size: 16px; line-height: 1.8; color: rgba(237,230,216,0.55); margin-bottom: 40px; max-width: 420px; }
-    .btn-light { font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; background: var(--warm); color: var(--ink); padding: 15px 34px; text-decoration: none; display: inline-block; transition: background 0.25s, color 0.25s; }
-    .btn-light:hover { background: var(--red); color: #fff; }
-    .boutique-right { position: relative; overflow: hidden; background: #120E09; display: flex; align-items: center; justify-content: center; }
-    .boutique-right::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 50%, rgba(192,57,43,0.18) 0%, transparent 70%); }
-    .boutique-bg-text { font-family: 'Playfair Display', serif; font-weight: 900; font-style: italic; font-size: clamp(80px, 13vw, 180px); color: transparent; -webkit-text-stroke: 1px rgba(237,230,216,0.06); line-height: 1; text-align: center; user-select: none; position: absolute; }
-    .boutique-logo { position: relative; z-index: 1; width: 180px; height: auto; }
+    /* ── BOUTIQUE ── */
+    .boutique-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .boutique-card {
+      background: var(--ink); border-radius: var(--radius-xl);
+      padding: 56px 48px;
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .boutique-title { font-family: 'Fraunces', serif; font-weight: 900; font-style: italic; font-size: clamp(38px, 4vw, 58px); line-height: 1.05; color: var(--warm); margin-bottom: 20px; }
+    .boutique-title span { color: var(--red); }
+    .boutique-desc { font-size: 16px; line-height: 1.8; color: rgba(237,230,216,0.55); margin-bottom: 36px; }
+    .btn-warm {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 12px; font-weight: 500; letter-spacing: 0.15em;
+      text-transform: uppercase; background: var(--warm); color: var(--ink);
+      padding: 14px 30px; border-radius: var(--radius-pill);
+      text-decoration: none; transition: all 0.25s; width: fit-content;
+    }
+    .btn-warm:hover { background: var(--red); color: #fff; transform: translateY(-2px); }
+    .boutique-visual {
+      background: #120E09; border-radius: var(--radius-xl);
+      display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden; min-height: 360px;
+    }
+    .boutique-visual::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 50%, rgba(192,57,43,0.2) 0%, transparent 65%);
+    }
+    .boutique-bg-word {
+      font-family: 'Fraunces', serif; font-weight: 900; font-style: italic;
+      font-size: clamp(80px, 12vw, 150px); color: transparent;
+      -webkit-text-stroke: 1px rgba(237,230,216,0.06); user-select: none;
+      line-height: 1; position: absolute;
+    }
+    .boutique-logo-img { position: relative; z-index: 1; width: 160px; height: auto; }
 
-    /* MERCH */
-    .merch { background: var(--warm); padding: 100px 56px; text-align: center; border-top: 1px solid var(--warm-dark); }
-    .merch-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(40px, 5vw, 70px); color: var(--ink); margin-bottom: 16px; }
-    .merch-title em { font-style: italic; color: var(--red); }
-    .merch-sub { font-size: 17px; line-height: 1.75; color: var(--ink-light); max-width: 480px; margin: 0 auto 40px; }
+    /* ── MERCH ── */
+    .merch-card {
+      background: var(--sun-soft); border: 1.5px solid rgba(232,184,109,0.35);
+      border-radius: var(--radius-xl); padding: 72px 48px;
+      text-align: center;
+    }
+    .merch-title { font-family: 'Fraunces', serif; font-weight: 900; font-style: italic; font-size: clamp(40px, 5vw, 68px); color: var(--ink); margin-bottom: 14px; }
+    .merch-title span { color: var(--red); }
+    .merch-sub { font-size: 17px; line-height: 1.75; color: var(--ink-light); max-width: 440px; margin: 0 auto 36px; }
 
-    /* SOCIAL */
-    .social { background: var(--white); padding: 100px 56px; border-top: 1px solid var(--warm-dark); display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
-    .social-left { padding-right: 56px; border-right: 1px solid var(--warm-dark); display: flex; flex-direction: column; justify-content: center; }
-    .social-heading { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(36px, 4vw, 60px); line-height: 1.05; color: var(--ink); margin-bottom: 14px; }
-    .social-heading em { font-style: italic; color: var(--red); }
-    .social-sub { font-size: 16px; line-height: 1.8; color: var(--ink-light); margin-bottom: 36px; }
-    .social-links { display: flex; flex-direction: column; gap: 14px; }
-    .social-link { display: flex; align-items: center; gap: 16px; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink); text-decoration: none; padding: 18px 22px; border: 1px solid var(--warm-dark); background: var(--warm); transition: all 0.25s; }
-    .social-link:hover { background: var(--ink); color: var(--warm); border-color: var(--ink); }
-    .social-link svg { width: 18px; height: 18px; flex-shrink: 0; }
-    .social-right { padding-left: 56px; display: flex; flex-direction: column; justify-content: center; }
+    /* ── SOCIAL ── */
+    .social-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .social-follow-card {
+      background: var(--white); border-radius: var(--radius-xl);
+      padding: 56px 48px; border: 1px solid rgba(26,20,16,0.06);
+    }
+    .social-links { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; }
+    .social-link {
+      display: flex; align-items: center; gap: 14px;
+      font-size: 13px; font-weight: 500; color: var(--ink);
+      text-decoration: none; padding: 18px 22px;
+      background: var(--warm); border-radius: var(--radius-lg);
+      border: 1px solid rgba(26,20,16,0.06);
+      transition: all 0.25s;
+    }
+    .social-link:hover { background: var(--ink); color: var(--warm); }
+    .social-link svg { width: 20px; height: 20px; flex-shrink: 0; }
+    .subscribe-card {
+      background: var(--ink); border-radius: var(--radius-xl);
+      padding: 56px 48px;
+    }
+    .subscribe-title { font-family: 'Fraunces', serif; font-weight: 900; font-style: italic; font-size: clamp(30px, 3vw, 44px); color: var(--warm); margin-bottom: 8px; line-height: 1.1; }
+    .subscribe-sub { font-size: 15px; color: rgba(237,230,216,0.45); margin-bottom: 28px; line-height: 1.6; }
+    .sub-form { display: flex; flex-direction: column; gap: 10px; }
+    .sub-form input {
+      background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg); color: var(--warm);
+      font-family: 'DM Sans', sans-serif; font-size: 14px;
+      padding: 14px 18px; outline: none; transition: border-color 0.2s; width: 100%;
+    }
+    .sub-form input::placeholder { color: rgba(237,230,216,0.28); }
+    .sub-form input:focus { border-color: var(--red); }
+    .sub-form button {
+      background: var(--red); color: #fff; border: none;
+      font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 500;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      padding: 15px 28px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: all 0.25s; width: 100%;
+    }
+    .sub-form button:hover { background: var(--warm); color: var(--ink); }
+    .sub-note { font-size: 10px; color: rgba(237,230,216,0.28); margin-top: 10px; letter-spacing: 0.05em; }
 
-    /* CONTACT */
-    .contact { background: var(--ink); padding: 100px 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
-    .contact-eyebrow { display: inline-flex; align-items: center; gap: 12px; font-size: 10px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: var(--red); margin-bottom: 20px; }
-    .contact-eyebrow::before { content: ''; display: inline-block; width: 28px; height: 1px; background: var(--red); }
-    .contact-title { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(40px, 5vw, 68px); line-height: 1.02; color: var(--warm); margin-bottom: 36px; }
-    .contact-title em { font-style: italic; color: var(--red); }
+    /* ── CONTACT ── */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .contact-info-card {
+      background: var(--red); border-radius: var(--radius-xl);
+      padding: 56px 48px;
+    }
+    .contact-title { font-family: 'Fraunces', serif; font-weight: 900; font-style: italic; font-size: clamp(38px, 4vw, 58px); line-height: 1.02; color: #fff; margin-bottom: 36px; }
     .contact-details { display: flex; flex-direction: column; gap: 22px; }
-    .contact-item-label { font-size: 9px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(237,230,216,0.35); margin-bottom: 5px; }
-    .contact-item-value { font-family: 'Playfair Display', serif; font-size: 18px; color: var(--warm); line-height: 1.55; }
-    .contact-item-value a { color: var(--warm); text-decoration: none; transition: color 0.25s; }
-    .contact-item-value a:hover { color: var(--red); }
-    .subscribe-box { background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.07); padding: 48px 40px; }
-    .subscribe-heading { font-family: 'Playfair Display', serif; font-weight: 700; font-style: italic; font-size: 28px; color: var(--warm); margin-bottom: 8px; }
-    .subscribe-sub { font-size: 14px; color: rgba(237,230,216,0.45); margin-bottom: 28px; line-height: 1.6; }
-    .subscribe-form { display: flex; flex-direction: column; gap: 12px; }
-    .subscribe-form input { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.09); color: var(--warm); font-family: 'Jost', sans-serif; font-size: 14px; padding: 14px 18px; outline: none; transition: border-color 0.25s; width: 100%; }
-    .subscribe-form input::placeholder { color: rgba(237,230,216,0.28); }
-    .subscribe-form input:focus { border-color: var(--red); }
-    .subscribe-form button { background: var(--red); color: #fff; border: none; font-family: 'Jost', sans-serif; font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; padding: 15px 30px; cursor: pointer; transition: background 0.25s; width: 100%; }
-    .subscribe-form button:hover { background: var(--warm); color: var(--ink); }
-    .subscribe-note { font-size: 10px; color: rgba(237,230,216,0.28); margin-top: 10px; letter-spacing: 0.05em; }
+    .c-label { font-size: 9px; font-weight: 500; letter-spacing: 0.3em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 5px; }
+    .c-value { font-family: 'Fraunces', serif; font-style: italic; font-size: 20px; color: #fff; line-height: 1.5; }
+    .c-value a { color: #fff; text-decoration: none; transition: opacity 0.2s; }
+    .c-value a:hover { opacity: 0.75; }
+    .contact-form-card {
+      background: var(--white); border-radius: var(--radius-xl);
+      padding: 56px 48px; border: 1px solid rgba(26,20,16,0.06);
+    }
+    .contact-form-title { font-family: 'Fraunces', serif; font-weight: 700; font-style: italic; font-size: 30px; color: var(--ink); margin-bottom: 8px; }
+    .contact-form-sub { font-size: 14px; color: var(--ink-light); margin-bottom: 28px; line-height: 1.6; }
+    .c-form { display: flex; flex-direction: column; gap: 10px; }
+    .c-form input, .c-form textarea {
+      background: var(--warm); border: 1.5px solid rgba(26,20,16,0.08);
+      border-radius: var(--radius-lg); color: var(--ink);
+      font-family: 'DM Sans', sans-serif; font-size: 14px;
+      padding: 14px 18px; outline: none; transition: border-color 0.2s; width: 100%;
+    }
+    .c-form textarea { resize: none; height: 100px; }
+    .c-form input::placeholder, .c-form textarea::placeholder { color: var(--ink-light); }
+    .c-form input:focus, .c-form textarea:focus { border-color: var(--red); background: var(--white); }
+    .c-form button {
+      background: var(--ink); color: var(--warm); border: none;
+      font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 500;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      padding: 15px 28px; border-radius: var(--radius-pill);
+      cursor: pointer; transition: all 0.25s; width: 100%;
+    }
+    .c-form button:hover { background: var(--red); }
 
-    /* FOOTER */
-    footer { background: #100C08; padding: 44px 56px 36px; display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255,255,255,0.05); }
-    .footer-logo img { height: 36px; width: auto; }
-    .footer-copy { font-size: 11px; color: rgba(237,230,216,0.28); letter-spacing: 0.05em; }
-    .footer-links { display: flex; gap: 28px; }
-    .footer-links a { font-size: 10px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(237,230,216,0.38); text-decoration: none; transition: color 0.25s; }
+    /* ── FOOTER ── */
+    footer {
+      margin: 0 24px 24px; background: var(--ink);
+      border-radius: var(--radius-xl); padding: 44px 48px 36px;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .footer-logo img { height: 34px; width: auto; }
+    .footer-copy { font-size: 11px; color: rgba(237,230,216,0.3); letter-spacing: 0.05em; }
+    .footer-links { display: flex; gap: 24px; }
+    .footer-links a { font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(237,230,216,0.38); text-decoration: none; transition: color 0.2s; }
     .footer-links a:hover { color: var(--warm); }
 
-    /* ANIMATIONS */
-    @keyframes riseIn { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+    /* ── ANIMATIONS ── */
+    @keyframes popIn { from { opacity: 0; transform: scale(0.92) translateY(16px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
     @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-    .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.8s cubic-bezier(0.22,1,0.36,1), transform 0.8s cubic-bezier(0.22,1,0.36,1); }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-    .d1 { transition-delay: 0.1s; }
-    .d2 { transition-delay: 0.22s; }
-    .d3 { transition-delay: 0.34s; }
 
-    /* MOBILE */
+    .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.75s cubic-bezier(0.22,1,0.36,1), transform 0.75s cubic-bezier(0.22,1,0.36,1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .d1 { transition-delay: 0.1s; } .d2 { transition-delay: 0.2s; } .d3 { transition-delay: 0.3s; }
+
+    /* ── MOBILE ── */
     @media (max-width: 800px) {
-      nav { padding: 16px 24px; }
+      nav { width: calc(100% - 24px); padding: 12px 16px; }
       .nav-links { display: none; }
-      .hero { grid-template-columns: 1fr; padding: 100px 24px 60px; }
-      .hero-right { display: none; }
-      .about, .boutique, .social, .contact { grid-template-columns: 1fr; }
-      .about-left { border-right: none; border-bottom: 1px solid var(--warm-dark); padding: 72px 24px; }
-      .about-right { padding: 72px 24px; }
-      .boutique-left { padding: 72px 24px; }
-      .boutique-right { min-height: 260px; }
-      .social-left { border-right: none; border-bottom: 1px solid var(--warm-dark); padding: 72px 24px; }
-      .social-right { padding: 72px 24px; }
-      .events, .merch { padding: 72px 24px; }
-      .events-header { flex-direction: column; align-items: flex-start; gap: 20px; }
+      .about-grid, .boutique-grid, .social-grid, .contact-grid { grid-template-columns: 1fr; }
       .events-grid { grid-template-columns: 1fr; }
-      .contact { padding: 72px 24px; gap: 48px; }
-      footer { flex-direction: column; gap: 18px; text-align: center; padding: 36px 24px 28px; }
+      .events-top { flex-direction: column; align-items: flex-start; gap: 20px; }
+      .hero-stats { gap: 8px; }
+      .about-card-main, .events-bg, .boutique-card, .boutique-visual,
+      .social-follow-card, .subscribe-card, .contact-info-card, .contact-form-card,
+      footer { padding: 36px 28px; }
+      .marquee-wrap { margin: 16px 12px; }
+      footer { flex-direction: column; gap: 18px; text-align: center; margin: 0 12px 12px; }
+      .section { padding: 56px 12px; }
     }
   </style>
 </head>
@@ -190,8 +496,8 @@
 
   <!-- NAV -->
   <nav id="nav">
-    <a href="#" class="nav-logo">
-      <img id="nav-logo-img" alt="Deep Brew Sundaze" />
+    <a href="#" class="nav-logo" aria-label="Deep Brew Sundaze Home">
+      <img id="nav-logo" alt="Deep Brew Sundaze logo" />
     </a>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
@@ -200,232 +506,260 @@
       <li><a href="#merch">Merch</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" class="nav-cta">Get Tickets</a>
+    <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" rel="noopener" class="nav-cta" aria-label="Book event tickets on Quicket">Get Tickets</a>
   </nav>
 
   <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-left">
-      <div class="hero-eyebrow">Est. 2014 — Gqeberha, SA</div>
-      <h1 class="hero-title">Deep<br/><em>Brew,</em><br/>Sundaze</h1>
-      <p class="hero-desc">SA's favourite rooftop Sunday tradition. Friends, food, music and drinks — curated for those who know how to spend a Sunday.</p>
-      <div class="hero-actions">
-        <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" class="btn-primary">Book Tickets</a>
-        <a href="#events" class="btn-text">Upcoming Events</a>
-      </div>
+  <main>
+  <section class="hero" id="home" aria-label="Hero section">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-tag">SA's #1 Rooftop Sunday Party</div>
+    <h1 class="hero-title">Deep<br/><span>Brew,</span><br/>Sundaze</h1>
+    <p class="hero-sub">South Africa's favourite rooftop Sunday tradition since 2014 — friends, food, curated music and unforgettable sunsets in Gqeberha.</p>
+    <div class="hero-actions">
+      <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" rel="noopener" class="btn-red">Book Tickets</a>
+      <a href="#events" class="btn-outline">Upcoming Events</a>
     </div>
-    <div class="hero-right">
-      <div style="position:relative;">
-        <div class="hero-year">2014</div>
-        <div class="hero-badge"><span>10+</span><span>Years</span></div>
-      </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hero-stat-n">2014</div><div class="hero-stat-l">Est.</div></div>
+      <div class="hero-stat"><div class="hero-stat-n">10+</div><div class="hero-stat-l">Years of Sundays</div></div>
+      <div class="hero-stat"><div class="hero-stat-n">GQB</div><div class="hero-stat-l">Gqeberha, SA</div></div>
     </div>
   </section>
 
   <!-- MARQUEE -->
-  <div class="marquee-wrap">
-    <div class="marquee-track">
-      <span class="marquee-item">Deep Brew Sundaze</span><span class="marquee-item dot">✦</span>
-      <span class="marquee-item">Rooftop Sundays</span><span class="marquee-item dot">✦</span>
-      <span class="marquee-item">Gqeberha</span><span class="marquee-item dot">✦</span>
-      <span class="marquee-item">Music &amp; Culture</span><span class="marquee-item dot">✦</span>
-      <span class="marquee-item">Since 2014</span><span class="marquee-item dot">✦</span>
-      <span class="marquee-item">Beach Boutique Festival</span><span class="marquee-item dot">✦</span>
-      <span class="marquee-item">Deep Brew Sundaze</span><span class="marquee-item dot">✦</span>
-      <span class="marquee-item">Rooftop Sundays</span><span class="marquee-item dot">✦</span>
-      <span class="marquee-item">Gqeberha</span><span class="marquee-item dot">✦</span>
-      <span class="marquee-item">Music &amp; Culture</span><span class="marquee-item dot">✦</span>
-      <span class="marquee-item">Since 2014</span><span class="marquee-item dot">✦</span>
-      <span class="marquee-item">Beach Boutique Festival</span><span class="marquee-item dot">✦</span>
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-inner">
+      <div class="marquee-track">
+        <span class="m-item">Deep Brew Sundaze</span><span class="m-item m-dot">✦</span>
+        <span class="m-item">Rooftop Parties SA</span><span class="m-item m-dot">✦</span>
+        <span class="m-item">Gqeberha</span><span class="m-item m-dot">✦</span>
+        <span class="m-item">Music &amp; Culture</span><span class="m-item m-dot">✦</span>
+        <span class="m-item">Since 2014</span><span class="m-item m-dot">✦</span>
+        <span class="m-item">Beach Boutique Festival</span><span class="m-item m-dot">✦</span>
+        <span class="m-item">Sunday Tradition</span><span class="m-item m-dot">✦</span>
+        <span class="m-item">Deep Brew Sundaze</span><span class="m-item m-dot">✦</span>
+        <span class="m-item">Rooftop Parties SA</span><span class="m-item m-dot">✦</span>
+        <span class="m-item">Gqeberha</span><span class="m-item m-dot">✦</span>
+        <span class="m-item">Music &amp; Culture</span><span class="m-item m-dot">✦</span>
+        <span class="m-item">Since 2014</span><span class="m-item m-dot">✦</span>
+        <span class="m-item">Beach Boutique Festival</span><span class="m-item m-dot">✦</span>
+        <span class="m-item">Sunday Tradition</span><span class="m-item m-dot">✦</span>
+      </div>
     </div>
   </div>
 
   <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="about-left">
-      <div class="section-label reveal">Who We Are</div>
-      <h2 class="about-heading reveal d1">A <em>progressive</em> take on Southern African nightlife</h2>
-      <div class="about-body reveal d2">
-        <p>DEEP BREW, Sundaze celebrates a progressive take on Southern African nightlife — inspiring cosmopolitan cultural diversity and romance with sound.</p>
-        <p>Originally founded in June 2014, our Sunday Tradition began on the 6th of December 2015 at Gqeberha's iconic Roof Garden Bar. A carefully curated blend of friends, food, music and drinks.</p>
-        <p>Trust us — there's no better place to be on a Sunday.</p>
-      </div>
-    </div>
-    <div class="about-right">
-      <div class="about-stat reveal">
-        <div class="about-stat-number">2014</div>
-        <div class="about-stat-label">Year Founded</div>
-      </div>
-      <div class="about-stat reveal d1">
-        <div class="about-stat-number">10+</div>
-        <div class="about-stat-label">Years of Sundays</div>
-      </div>
-      <div class="about-stat reveal d2">
-        <div class="about-stat-number">GQB</div>
-        <div class="about-stat-label">Roof Garden Bar, Gqeberha</div>
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="section-inner">
+      <div class="about-grid">
+        <article class="about-card-main reveal">
+          <div class="chip">Who We Are</div>
+          <h2 class="about-heading" id="about-heading">A <span>progressive</span> take on South African nightlife</h2>
+          <div class="about-body">
+            <p>DEEP BREW, Sundaze is South Africa's favourite rooftop Sunday party experience — celebrating cosmopolitan cultural diversity and romance with sound in the heart of Gqeberha.</p>
+            <p>Founded in June 2014, our Sunday Tradition began on 6 December 2015 at Gqeberha's iconic Roof Garden Bar. We bring together friends, food, curated music and drinks every Sunday.</p>
+            <p>Whether you're chasing the perfect sundowner or looking for the best rooftop event in the Eastern Cape — there's no better place to be on a Sunday.</p>
+          </div>
+        </article>
+        <div class="about-stats-col">
+          <div class="stat-card reveal d1">
+            <div class="stat-n">2014</div>
+            <div class="stat-l">Year Founded</div>
+          </div>
+          <div class="stat-card accent reveal d2">
+            <div class="stat-n">10+</div>
+            <div class="stat-l">Years of Sundays</div>
+          </div>
+          <div class="stat-card reveal d3">
+            <div class="stat-n">GQB</div>
+            <div class="stat-l">Roof Garden Bar</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- EVENTS -->
-  <section class="events" id="events">
-    <div class="events-header">
-      <div>
-        <div class="section-label reveal">What's On</div>
-        <h2 class="events-title reveal d1">Upcoming<br/>Events</h2>
-      </div>
-      <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" class="btn-primary reveal d2">All Tickets →</a>
-    </div>
-    <div class="events-grid">
-      <div class="event-card reveal">
-        <div class="event-date">Coming Soon</div>
-        <div class="event-name">Sundaze Session</div>
-        <div class="event-venue">Roof Garden Bar, Gqeberha</div>
-        <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" class="event-link">Get Tickets →</a>
-      </div>
-      <div class="event-card reveal d1">
-        <div class="event-date">Coming Soon</div>
-        <div class="event-name">Sundaze Session</div>
-        <div class="event-venue">Roof Garden Bar, Gqeberha</div>
-        <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" class="event-link">Get Tickets →</a>
-      </div>
-      <div class="event-card reveal d2">
-        <div class="event-date">Coming Soon</div>
-        <div class="event-name">Sundaze Session</div>
-        <div class="event-venue">Roof Garden Bar, Gqeberha</div>
-        <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" class="event-link">Get Tickets →</a>
+  <section class="section" id="events" aria-labelledby="events-heading">
+    <div class="section-inner">
+      <div class="events-bg reveal">
+        <div class="events-top">
+          <div>
+            <div class="chip">What's On</div>
+            <h2 class="section-title" id="events-heading">Upcoming<br/>Events</h2>
+          </div>
+          <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" rel="noopener" class="btn-red">All Tickets →</a>
+        </div>
+        <div class="events-grid">
+          <article class="event-card">
+            <div class="event-date">Coming Soon</div>
+            <h3 class="event-name">Sundaze Session</h3>
+            <p class="event-venue">Roof Garden Bar, Gqeberha</p>
+            <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" rel="noopener" class="event-link">Get Tickets →</a>
+          </article>
+          <article class="event-card">
+            <div class="event-date">Coming Soon</div>
+            <h3 class="event-name">Sundaze Session</h3>
+            <p class="event-venue">Roof Garden Bar, Gqeberha</p>
+            <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" rel="noopener" class="event-link">Get Tickets →</a>
+          </article>
+          <article class="event-card">
+            <div class="event-date">Coming Soon</div>
+            <h3 class="event-name">Sundaze Session</h3>
+            <p class="event-venue">Roof Garden Bar, Gqeberha</p>
+            <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" rel="noopener" class="event-link">Get Tickets →</a>
+          </article>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- BEACH BOUTIQUE FESTIVAL -->
-  <section class="boutique" id="boutique">
-    <div class="boutique-left">
-      <div class="boutique-eyebrow reveal">Flagship Event</div>
-      <h2 class="boutique-title reveal d1">Beach<br/><em>Boutique</em><br/>Festival</h2>
-      <p class="boutique-desc reveal d2">Our signature annual festival — where the beach meets the boutique. An immersive day of curated music, art, food and culture at its most refined.</p>
-      <a href="https://deepbrewsundaze.com/beach-boutique-festival/" target="_blank" class="btn-light reveal d3">Find Out More</a>
-    </div>
-    <div class="boutique-right">
-      <div class="boutique-bg-text">Festival</div>
-      <img class="boutique-logo" id="boutique-logo" alt="Deep Brew Sundaze" />
+  <section class="section" id="boutique" aria-labelledby="boutique-heading">
+    <div class="section-inner">
+      <div class="boutique-grid">
+        <article class="boutique-card reveal">
+          <div class="chip" style="background:rgba(255,255,255,0.08);color:rgba(237,230,216,0.7);">Flagship Event</div>
+          <h2 class="boutique-title" id="boutique-heading">Beach<br/><span>Boutique</span><br/>Festival</h2>
+          <p class="boutique-desc">Our signature annual festival — where the beach meets the boutique. An immersive day of curated music, art, food and culture in the Eastern Cape.</p>
+          <a href="https://deepbrewsundaze.com/beach-boutique-festival/" target="_blank" rel="noopener" class="btn-warm">Find Out More →</a>
+        </article>
+        <div class="boutique-visual reveal d1">
+          <div class="boutique-bg-word" aria-hidden="true">Festival</div>
+          <img class="boutique-logo-img" id="boutique-logo" alt="Deep Brew Sundaze" />
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- MERCH -->
-  <section class="merch" id="merch">
-    <div class="section-label reveal" style="justify-content:center;">Gear Up</div>
-    <h2 class="merch-title reveal d1">Deep Brew <em>Merch</em></h2>
-    <p class="merch-sub reveal d2">Wear the Sunday tradition. Limited drops, curated pieces — get in touch below to find out what's available.</p>
-    <a href="#contact" class="btn-primary reveal d3">Enquire Now</a>
-  </section>
-
-  <!-- SOCIAL / SUBSCRIBE -->
-  <section class="social" id="social">
-    <div class="social-left">
-      <div class="section-label reveal">Stay Connected</div>
-      <h2 class="social-heading reveal d1">Follow the <em>vibe</em></h2>
-      <p class="social-sub reveal d2">Live on Facebook and Instagram — behind-the-scenes content, event announcements and all things Deep Brew.</p>
-      <div class="social-links reveal d3">
-        <a href="https://www.facebook.com/DEEPBREW" target="_blank" class="social-link">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-          Facebook — @DEEPBREW
-        </a>
-        <a href="https://www.instagram.com/deepbrewsundaze/" target="_blank" class="social-link">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          Instagram — @deepbrewsundaze
-        </a>
+  <section class="section" id="merch" aria-labelledby="merch-heading">
+    <div class="section-inner">
+      <div class="merch-card reveal">
+        <div class="chip" style="margin:0 auto 20px;">Gear Up</div>
+        <h2 class="merch-title" id="merch-heading">Deep Brew <span>Merch</span></h2>
+        <p class="merch-sub">Wear the Sunday tradition. Limited drops, curated pieces — get in touch below to find out what's available.</p>
+        <a href="#contact" class="btn-red">Enquire Now</a>
       </div>
     </div>
-    <div class="social-right">
-      <div class="section-label reveal">Priority Access</div>
-      <h3 class="social-heading reveal d1" style="font-size:clamp(28px,3vw,44px);">Get tickets <em>first</em></h3>
-      <p class="social-sub reveal d2" style="margin-bottom:24px;">Join the mailing list and never miss a Sunday.</p>
-      <form class="subscribe-form reveal d3" onsubmit="handleSub(event)">
-        <input type="text" placeholder="Your name" />
-        <input type="email" placeholder="your@email.com" required />
-        <button type="submit">Subscribe →</button>
-        <p class="subscribe-note">No spam. Ever. We respect your privacy.</p>
-      </form>
+  </section>
+
+  <!-- SOCIAL + SUBSCRIBE -->
+  <section class="section" id="social" aria-labelledby="social-heading">
+    <div class="section-inner">
+      <div class="social-grid">
+        <article class="social-follow-card reveal">
+          <div class="chip">Stay Connected</div>
+          <h2 class="section-title" id="social-heading">Follow<br/>the vibe</h2>
+          <div class="social-links">
+            <a href="https://www.facebook.com/DEEPBREW" target="_blank" rel="noopener" class="social-link" aria-label="Follow Deep Brew on Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              Facebook — @DEEPBREW
+            </a>
+            <a href="https://www.instagram.com/deepbrewsundaze/" target="_blank" rel="noopener" class="social-link" aria-label="Follow Deep Brew Sundaze on Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              Instagram — @deepbrewsundaze
+            </a>
+          </div>
+        </article>
+        <article class="subscribe-card reveal d1">
+          <div class="chip" style="background:rgba(255,255,255,0.08);color:rgba(237,230,216,0.6);">Priority Access</div>
+          <h2 class="subscribe-title">Get tickets<br/>first</h2>
+          <p class="subscribe-sub">Join our mailing list and never miss a Sunday session.</p>
+          <form class="sub-form" onsubmit="handleSub(event)" aria-label="Subscribe to mailing list">
+            <input type="text" placeholder="Your name" autocomplete="name" />
+            <input type="email" placeholder="your@email.com" required autocomplete="email" />
+            <button type="submit">Subscribe →</button>
+            <p class="sub-note">No spam, ever. We respect your privacy.</p>
+          </form>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div>
-      <div class="contact-eyebrow reveal">Get In Touch</div>
-      <h2 class="contact-title reveal d1">Come find <em>us</em></h2>
-      <div class="contact-details reveal d2">
-        <div>
-          <div class="contact-item-label">Address</div>
-          <div class="contact-item-value">33 Winston Ntshona St<br/>Port Elizabeth Central<br/>Gqeberha, 6001, South Africa</div>
-        </div>
-        <div>
-          <div class="contact-item-label">Phone</div>
-          <div class="contact-item-value"><a href="tel:+27815595518">+27 81 559 5518</a></div>
-        </div>
-        <div>
-          <div class="contact-item-label">Tickets</div>
-          <div class="contact-item-value"><a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank">Quicket — Deep Brew Sundaze</a></div>
-        </div>
-      </div>
-    </div>
-    <div class="reveal d2">
-      <div class="subscribe-box">
-        <div class="subscribe-heading">Drop us a message</div>
-        <p class="subscribe-sub">For bookings, merch enquiries or anything else — reach out below.</p>
-        <form class="subscribe-form" onsubmit="handleContact(event)">
-          <input type="text" placeholder="Your name" required />
-          <input type="email" placeholder="your@email.com" required />
-          <input type="text" placeholder="What's it about?" />
-          <button type="submit">Send Message →</button>
-          <p class="subscribe-note">We'll get back to you as soon as possible.</p>
-        </form>
+  <section class="section" id="contact" aria-labelledby="contact-heading">
+    <div class="section-inner">
+      <div class="contact-grid">
+        <article class="contact-info-card reveal">
+          <div class="chip" style="background:rgba(255,255,255,0.15);color:#fff;">Get In Touch</div>
+          <h2 class="contact-title" id="contact-heading">Come find us</h2>
+          <div class="contact-details">
+            <div>
+              <div class="c-label">Address</div>
+              <div class="c-value">33 Winston Ntshona St<br/>Port Elizabeth Central<br/>Gqeberha, 6001, South Africa</div>
+            </div>
+            <div>
+              <div class="c-label">Phone</div>
+              <div class="c-value"><a href="tel:+27815595518">+27 81 559 5518</a></div>
+            </div>
+            <div>
+              <div class="c-label">Tickets</div>
+              <div class="c-value"><a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" rel="noopener">Quicket — Deep Brew Sundaze</a></div>
+            </div>
+          </div>
+        </article>
+        <article class="contact-form-card reveal d1">
+          <div class="contact-form-title">Drop us a message</div>
+          <p class="contact-form-sub">For bookings, merch enquiries or anything else — we'd love to hear from you.</p>
+          <form class="c-form" onsubmit="handleContact(event)" aria-label="Contact form">
+            <input type="text" placeholder="Your name" required autocomplete="name" />
+            <input type="email" placeholder="your@email.com" required autocomplete="email" />
+            <input type="text" placeholder="Subject" />
+            <textarea placeholder="Your message..."></textarea>
+            <button type="submit">Send Message →</button>
+          </form>
+        </article>
       </div>
     </div>
   </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
-    <a href="#" class="footer-logo"><img id="footer-logo-img" alt="Deep Brew Sundaze" /></a>
-    <p class="footer-copy">© 2026 DEEP BREW, Sundaze. All rights reserved.</p>
-    <div class="footer-links">
-      <a href="https://www.facebook.com/DEEPBREW" target="_blank">Facebook</a>
-      <a href="https://www.instagram.com/deepbrewsundaze/" target="_blank">Instagram</a>
-      <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank">Tickets</a>
-    </div>
+    <a href="#" class="footer-logo" aria-label="Deep Brew Sundaze"><img id="footer-logo" alt="Deep Brew Sundaze" /></a>
+    <p class="footer-copy">© 2026 Deep Brew Sundaze. All rights reserved.</p>
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="https://www.facebook.com/DEEPBREW" target="_blank" rel="noopener">Facebook</a>
+      <a href="https://www.instagram.com/deepbrewsundaze/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.quicket.co.za/organisers/2454-deep-brew-sundaze" target="_blank" rel="noopener">Tickets</a>
+    </nav>
   </footer>
 
   <script>
-    // Inject logo base64 (avoids shell escaping issues)
     const LOGO = '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';
     const src = 'data:image/png;base64,' + LOGO;
-    document.getElementById('nav-logo-img').src = src;
+    document.getElementById('nav-logo').src = src;
     document.getElementById('boutique-logo').src = src;
-    document.getElementById('footer-logo-img').src = src;
+    document.getElementById('footer-logo').src = src;
 
     // Scroll reveal
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-    // Nav shrink
+    // Nav scroll effect
     window.addEventListener('scroll', () => {
-      document.getElementById('nav').style.padding = window.scrollY > 50 ? '14px 56px' : '22px 56px';
+      const nav = document.getElementById('nav');
+      if (window.scrollY > 60) {
+        nav.style.boxShadow = '0 8px 40px rgba(26,20,16,0.12)';
+      } else {
+        nav.style.boxShadow = '0 4px 32px rgba(26,20,16,0.06)';
+      }
     });
 
-    // Forms
     function handleSub(e) {
       e.preventDefault();
       const btn = e.target.querySelector('button');
-      btn.textContent = 'Subscribed ✓'; btn.style.background = '#1A1410';
+      btn.textContent = 'Subscribed ✓'; btn.style.background = '#2D6A4F';
       setTimeout(() => { e.target.reset(); btn.textContent = 'Subscribe →'; btn.style.background = ''; }, 3000);
     }
     function handleContact(e) {
       e.preventDefault();
       const btn = e.target.querySelector('button');
-      btn.textContent = 'Message Sent ✓'; btn.style.background = '#1A1410';
+      btn.textContent = 'Sent ✓'; btn.style.background = '#2D6A4F';
       setTimeout(() => { e.target.reset(); btn.textContent = 'Send Message →'; btn.style.background = ''; }, 3000);
     }
   </script>
